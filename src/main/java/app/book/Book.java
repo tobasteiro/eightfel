@@ -8,4 +8,11 @@ public class Book {
 	String author;
 	String isbn;
 
+	public String getMediumCover() {
+        return "http://covers.openlibrary.org/b/isbn/" + this.isbn + "-M.jpg";
+    }
+
+    public String getLargeCover() {
+        return "http://covers.openlibrary.org/b/isbn/" + this.isbn + "-L.jpg";
+    }
 }
